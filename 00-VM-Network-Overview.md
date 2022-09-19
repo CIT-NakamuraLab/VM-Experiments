@@ -43,7 +43,6 @@ no-hosts -> #no-hosts（コメントアウト）
 
 no-resolv（追記）
 bogus-priv（追記）
-
 ```
 - `no-hosts`をコメントアウトして`/etc/hosts`での名前解決を許可
 - `no-resolv`を追記して`/etc/resolv.conf`を無視する
