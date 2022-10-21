@@ -6,32 +6,29 @@
 目次
 - [vCenter Server](#vcenter-server)
   - [概要](#概要)
-  - [1. vCenter Serverについて](#1-vcenter-serverについて)
-    - [1.1 vCenter Serverとは](#11-vcenter-serverとは)
-    - [1.2 vCenter Serverの機能](#12-vcenter-serverの機能)
-  - [2. 今回の実験](#2-今回の実験)
-    - [2.1 概要](#21-概要)
-    - [2.2 vCenter Serverのダウンロード手順](#22-vcenter-serverのダウンロード手順)
+  - [1. 今回の実験](#1-今回の実験)
+  - [2. vCenter Serverについて](#2-vcenter-serverについて)
+    - [2.1 vCenter Serverとは](#21-vcenter-serverとは)
+    - [2.2 vCenter Serverの機能](#22-vcenter-serverの機能)
+  - [3. vCenter Serverのダウンロード手順](#3-vcenter-serverのダウンロード手順)
 
-## 1. vCenter Serverについて
+## 1. 今回の実験
 
-### 1.1 vCenter Serverとは
+&nbsp;今回の実験では､研究室の環境([詳細はこちら](./00-VM-Machines.md))を利用して､vCenter Serverの構築を目指した｡ 
+
+&nbsp;目的として､vCenter Serverのインストール方法や設定方法の理解になれることである｡
+## 2. vCenter Serverについて
+
+### 2.1 vCenter Serverとは
 - vCenter Serverとは､複数のEsxiを束ねて1つの管理画面にて操作することを可能にする統合管理プラットフォーム
 
-### 1.2 vCenter Serverの機能
+### 2.2 vCenter Serverの機能
 - vSphere Update Manager 
 - vCenter Server Appliance 
 - 1つのvCenter Serverで､最大で2000のホスト数及び35000台の仮想マシン
 - GUIベースのvSphere Clientにて操作可能
 
-## 2. 今回の実験
-
-### 2.1 概要
-&nbsp;今回の実験では､研究室の環境([詳細はこちら](./00-VM-Machines.md))を利用して､vCenter Serverの構築を目指した｡ 
-
-&nbsp;目的として､vCenter Serverのインストール方法や設定方法の理解になれることである｡
-
-### 2.2 vCenter Serverのダウンロード手順
+## 3. vCenter Serverのダウンロード手順
 
 1. vCenterをVMwareからダウンロードする｡
 
@@ -71,6 +68,7 @@
 *図6 ステージ2の設定*
 
 12. ステージ2のインストールが完了するとログインする｡
+
 13. esxi4.nlab.localを検索し､`12`にて設定したユーザー名 = `administrator@hoge.local`､パスワード=`password`を入力しログインを行う｡
 
 以上の手順を踏むことによって､vCenter Serverを導入することが出来る｡
