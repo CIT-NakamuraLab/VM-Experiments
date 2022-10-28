@@ -38,9 +38,9 @@
 ![stage1の概要](images/20221014vCenterServerInstall/01stage1Summary.png)
 *図1 stage1の概要*
 
-4. vCenter Serverのデプロイターゲット欄には､ダウンロード先には､[esxi2のホスト](./00-VM-Network-Overview.md)､Esxiホスト名= `192.168.100.21`､ユーザ名=`root`､パスワード=`password`を入力する｡(esxi2にインストールした際に設定したユーザ名とパスワードを利用してください)
+4. vCenter Serverのデプロイターゲット欄には､ダウンロード先には､[esxi2のホスト](./00-VM-Network-Overview.md)､Esxiホスト名= `192.168.100.21`､ユーザ名=`root`､パスワード=`P@ssw0rd`を入力する｡(esxi2にインストールした際に設定したユーザ名とパスワードを利用してください)
 
-5. vCenter Serverの仮想マシンのセットアップ欄では､仮想マシン名 = `vCenter Server`､rootパスワード=`password` を入力する｡
+5. vCenter Serverの仮想マシンのセットアップ欄では､仮想マシン名 = `vCenter Server`､rootパスワード=`P@ssw0rd` を入力する｡
 
 6. 自分の環境に適したサイズを選択する。今回の場合は、実験用のため最小を選択する。
 !["Deploy](images/20221014vCenterServerInstall/02stage1Deploy.png)
@@ -49,7 +49,7 @@
 7. vCenterを入れるデータストアを選択する。この際に､`シンディスクモードの有効化`をする必要がある｡(有効化しないと､シックプロビジョニングが選択されるため､仮想ディスク作成時に指定したサイズ分の領域を確保する｡その際に､指定したサイズが大きいため有効化しなければならない｡)
 ![データストアの選択](images/20221014vCenterServerInstall/03stage1Datastore.png)
 
-8. vCenter自身のFQDN = `esxi4.nlab.local`､vCenterのipアドレス=`192.168.100.21`、サブネットマスク=`255.255.255.0`、デフォルトゲート=`192.168.100.1`、DNSサーバー=`192.168.100.2`を入力した｡([詳細はこちら](./00-VM-Network-Overview.md))
+8. vCenter自身のFQDN = `vcenter.nlab.local`､vCenterのipアドレス=`192.168.100.21`、サブネットマスク=`255.255.255.0`、デフォルトゲート=`192.168.100.1`、DNSサーバー=`192.168.100.2`を入力した｡([詳細はこちら](./00-VM-Network-Overview.md))
 ![ネットワークの設定](images/20221014vCenterServerInstall/04stage1Network.png)
 *図3 ネットワークの設定*
 
@@ -63,12 +63,12 @@
 10. ステージ2のvCenter Serverの構成にて､時刻同期モード = `NTPサーバーと時間を同期する`を選択し､NTPサーバー = `192.168.100.2` を設定する｡その際に､各Esxi1~4に`192.168.100.1x`にてログインし､管理､システム､日付と時刻に進みNTPサーバー場所を指定する必要がある｡
 ![Esxi NTP](images/20221014vCenterServerInstall/07esxiNTPConfig.png)
 
-11. SSO構成欄には､Single-Sign-Onドメイン名=`hoge.local`Single-Sign-Onパスワード=`password`を入力する｡また､SSHアクセスを有効にする｡
+11. SSO構成欄には､Single-Sign-Onドメイン名=`nlab.local`Single-Sign-Onパスワード=`P@ssw0rd`を入力する｡また､SSHアクセスを有効にする｡
 ![ステージ2の設定](images/20221014vCenterServerInstall/08stage2Config.png)
 *図6 ステージ2の設定*
 
 12. ステージ2のインストールが完了するとログインする｡
 
-13. esxi4.nlab.localを検索し､`12`にて設定したユーザー名 = `administrator@hoge.local`､パスワード=`password`を入力しログインを行う｡
+13. esxi4.nlab.localを検索し､`12`にて設定したユーザー名 = `administrator@nlab.local`､パスワード=`P@ssw0rd`を入力しログインを行う｡
 
 以上の手順を踏むことによって､vCenter Serverを導入することが出来る｡
