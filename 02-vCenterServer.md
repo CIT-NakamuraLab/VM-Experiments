@@ -60,7 +60,7 @@
 ![ステージ1の設定(後半)](images/20221014vCenterServerInstall/06stage1LastHalf.png)
 *図5 ステージ1の設定(後半)*
 
-10. ステージ2のvCenter Serverの構成にて､時刻同期モード = `NTPサーバーと時間を同期する`を選択し､NTPサーバー = `192.168.100.2` を設定する｡その際に､各Esxi1~4に`192.168.100.1x`にてログインし､管理､システム､日付と時刻に進みNTPサーバー場所を指定する必要がある｡
+10. ステージ2のvCenter Serverの構成にて､時刻同期モード = `NTPサーバーと時間を同期する`を選択し､NTPサーバー = `192.168.100.2` を設定する｡その際､各Esxi1~4に`192.168.100.1x`にてログインし､管理､システム､日付と時刻に進みNTPサーバー場所を指定する必要がある｡
 ![Esxi NTP](images/20221014vCenterServerInstall/07esxiNTPConfig.png)
 
 11. SSO構成欄には､Single-Sign-Onドメイン名=`nlab.local`Single-Sign-Onパスワード=`P@ssw0rd`を入力する｡また､SSHアクセスを有効にする｡
