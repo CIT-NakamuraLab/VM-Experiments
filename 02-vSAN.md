@@ -87,6 +87,7 @@
 ## 3. vSAN構築手順
 ### 3.1 vSAN概要図
 !["概要図"](images/20221014vSphereClient/00design.drawio.png)
+*図0 概要図*
 
 1. ログイン
 !["初期画面"](images/20221014vSphereClient/01initialScreen.png)
