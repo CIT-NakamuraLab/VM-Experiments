@@ -11,6 +11,7 @@
     - [2.1 vCenter Serverとは](#21-vcenter-serverとは)
     - [2.2 vCenter Serverの機能](#22-vcenter-serverの機能)
   - [3. vCenter Serverのダウンロード手順](#3-vcenter-serverのダウンロード手順)
+  - [4. まとめ](#4-まとめ)
 
 ## 1. 今回の実験
 
@@ -23,10 +24,8 @@
 - vCenter Serverとは､複数のEsxiを束ねて1つの管理画面にて操作することを可能にする統合管理プラットフォーム
 
 ### 2.2 vCenter Serverの機能
-- vSphere Update Manager 
-- vCenter Server Appliance 
-- 1つのvCenter Serverで､最大で2000のホスト数及び35000台の仮想マシン
-- GUIベースのvSphere Clientにて操作可能
+- 1つのvCenter Serverで､最大で2500のホスト数及び45000台の仮想マシン(ver7.0)
+- vSphereをインストールすることで､GUIベースにて操作可能
 
 ## 3. vCenter Serverのダウンロード手順
 
@@ -72,3 +71,9 @@
 13. esxi4.nlab.localを検索し､`12`にて設定したユーザー名 = `administrator@nlab.local`､パスワード=`P@ssw0rd`を入力しログインを行う｡
 
 以上の手順を踏むことによって､vCenter Serverを導入することが出来る｡
+
+## 4. まとめ
+- VMware会社が提供している統合管理プラットフォーム
+- 1つのvCenter Serverで､最大で2500のホスト数及び45000台の仮想マシン(ver7.0)
+- vSphereをインストールすることで､GUIベースにて操作可能
+- 仮想マシンを別のサーバーに移動することが可能
